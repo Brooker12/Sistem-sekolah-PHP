@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: #efefef;
+  /* background-image: url(../images/Logo-SMKN2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: soft-light; */
+}
+
+.bg-logo {
+  background-color: #efefef;
+  /* background-image: url(../images/Logo-SMKN2.png); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: soft-light;
+}
+
+.bg-sekolah {
+  /* background-image: url(../images/bg-smkn2mks.webp); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  backdrop-filter: blur(3px);
+}
+
+.login-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+}
+
+.login {
+  width: 275px;
+  height: 275px;
+  border: none;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: #467583;
+}
+
+.login:hover {
+  box-shadow: 0 0 10px #999;
+}
+
+.login h1 {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+.register {
+  margin-top: 10px;
+}
+
+.form-login {
+  width: 300px;
+  height: auto;
+  background-color: #efefef;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form-login h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.input-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  /* border-bottom: 1px solid; */
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.input-control[type="file"] {
+  margin-top: 10px;
+  background-color: white;
+}
+
+.input-search {
+  width: 20%;
+  padding: 5px 10px;
+}
+
+.form-submit {
+  margin-top: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: #23e6b5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  opacity: 0.5;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #467583;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+nav a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+nav a:hover {
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+}
+
+nav a.active {
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  opacity: 0.8;
+}
+
+.logo {
+  margin-right: auto;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.logo:hover {
+  border: none;
+  padding: 0;
+}
+
+.container {
+  margin: 20px 5% 0 5%;
+}
+
+.title {
+  margin: 10px 0px;
+  margin-right: auto;
+  font-size: 25px;
+}
+
+.table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.table,
+.table tbody {
+  width: 100%;
+}
+
+.table th,
+.table td {
+  /* border: 1px solid; */
+  padding: 10px 15px;
+}
+
+.table th {
+  background-color: #ddd;
+  font-size: 18px;
+}
+
+.table td {
+  /* background-color: #efefef; */
+  font-size: 16px;
+  padding: 25px 10px;
+}
+
+/* .table tr:hover{
+    opacity: 0.8;
+} */
+
+.detail-content {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 0px;
+}
+
+.tb-data {
+  width: 100%;
+  padding: 15px 0px;
+}
+
+.tb-data tr {
+  padding: 10px;
+}
+
+.tb-data td:nth-child(1) {
+  width: 30%;
+  padding-left: 20px;
+}
+
+.tb-data td {
+  padding: 10px 0px;
+}
+
+.tb-data input,
+.tb-data input[type="file"],
+.tb-data select,
+.tb-data a {
+  padding: 5px 10px;
+  width: 30%;
+  font-size: 15px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 0px 70px 0px 70px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0, 0.6);
+}
+.modal-content {
+  margin: 3% auto;
+  display: block;
+  padding: 10px 0px;
+  max-width: 60%;
+  height: auto;
+  background-color: #efefef;
+  box-shadow: 2px 3px 7px #ddd;
+}
+.modal-box {
+  margin: 3% auto 5%;
+  padding: 10px 0px;
+
+  width: 57%;
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: auto;
+}
+#caption:hover {
+  opacity: 0.5;
+  text-decoration: underline;
+}
+.close {
+  float: right;
+  margin-top: -18px;
+  color: var(--fontA);
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.head-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.add-data {
+  float: right;
+  cursor: pointer;
+  padding: 10px 12px;
+  margin: 10px 5px;
+  background-color: #9b9999;
+  color: #efefef;
+  border-radius: 5px;
+}
+.add-data:hover {
+  color: #000;
+  background-color: #ddd;
+  transform: scale(0.9);
+}
+.foto {
+  width: 80px;
+  object-fit: contain;
+}
+.btn-update {
+  padding: 7px 10px;
+  background-color: #6b8ec3;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-delete {
+  padding: 7px 10px;
+  background-color: #c36b6b;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-delete:hover,
+.btn-update:hover {
+  opacity: 0.5;
+}
+
+.form-label {
+  font-size: 16px;
+  color: #3f3f3f;
+}
+
+/* select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+} */
+
+.document-link {
+  color: #3939ff;
+}
+.document-link:hover {
+  text-decoration: underline;
+}
+.table-form {
+  width: 100%;
+}
+
+.table-form td {
+  padding: 10px 15px 0px 0px;
+  width: 40%;
+}
+.btn-red {
+  background-color: #dd4a4a;
+}
+.text-red {
+  color: #dd4a4a;
+}
+.mlr-10 {
+  margin: 0 20px;
+}
+
+.box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  margin: 10px 0;
+}
+.box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
