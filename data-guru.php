@@ -137,9 +137,7 @@
                             <a target="_blank" href="images/guru/dokumen/<?php echo $i['ijazahs2'] ?>" class="document-link">- Ijazah S2</a>
                         </td>
                         <td align="center">
-                            <a class="btn-update" href="detail-data.php?guru=<?php echo $i['id_guru'] ?>">Ubah</a>
-                        </td>
-                        <td align="center">
+                            <a class="btn-update" href="detail-data.php?guru=<?php echo $i['id_guru'] ?>">Ubah</a> | 
                             <a class="btn-delete" href="delete-data.php?guru=<?php echo $i['id_guru'] ?>" 
                             onclick="return confirm('Apakah kamu benar-benar ingin menghapus data ini?\n(<?php echo $i['nama']?>)')">Hapus</a>
                         </td>
@@ -182,6 +180,5 @@
             </div>
         </div>
     </div>
-    <script src="styles/modal.js"></script>
 </body>
 </html>

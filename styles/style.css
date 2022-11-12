@@ -179,7 +179,9 @@ nav a.active {
 
 .table {
   margin-top: 10px;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #777;
   white-space: nowrap;
 }
 
@@ -190,7 +192,7 @@ nav a.active {
 
 .table th,
 .table td {
-  /* border: 1px solid; */
+  border: 1px solid #777;
   padding: 10px 15px;
 }
 

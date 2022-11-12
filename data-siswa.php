@@ -115,7 +115,7 @@
             <!-- <input type="submit" name="src" id="btn-search" value="Cari Siswa" class="form-submit"> -->
         </form>
         <div id="content" style="width: 100%; overflow-x: auto;">
-            <table class="table" border="1"> 
+            <table class="table"> 
                 <thead>
                     <tr>
                         <th width="5%">No</th>
@@ -124,7 +124,7 @@
                         <th>NIS</th>
                         <th>Alamat</th>
                         <th>Jenis Kelamin</th>
-                        <th>Nama Orangtua</th>
+                        <th>Nama Orangtua</th> 
                         <th>No.HP Orangtua</th>
                         <th>Agama</th>
                         <th>Kelas</th>
@@ -133,7 +133,7 @@
                         <th>Foto</th>
                         <?php if($level === "admin"){?>
                         <th>Dokumen</th>
-                        <th colspan="2">Aksi</th>
+                        <th style="position: sticky; right: 0; background: #ddd; z-index: 2;">Aksi</th>
                         <?php } ?>
                     </tr>
                 </thead>
@@ -172,11 +172,8 @@
                             <a class="document-link" target="_blank" href="images/siswa/dokumen/<?php echo $i['ijazah']?>">- Ijazah SMP</a><br>
                             <a class="document-link" target="_blank" href="images/siswa/dokumen/<?php echo $i['kartu_keluarga']?>">- Kartu Keluarga</a>
                         </td>
-                        <td align="center">
-                            <a class="btn-update" href="detail-data.php?siswa=<?php echo $i['id_siswa'] ?>">Ubah</a>
-                            <!-- <a class="btn-update" href="detail-data.php?siswa=<?php echo $i['id_siswa'] ?>">Detail</a> -->
-                        </td>
-                        <td align="center">
+                        <td align="center" style="position: sticky; right: 0; z-index: 2; background: #efefef;">
+                            <a class="btn-update" href="detail-data.php?siswa=<?php echo $i['id_siswa'] ?>">Ubah</a> | 
                             <a class="btn-delete" href="delete-data.php?siswa=<?php echo $i['id_siswa'] ?>" 
                             onclick="return confirm('Apakah kamu benar-benar ingin menghapus data ini?\n(<?php echo $i['nama']?>)')">Hapus</a>
                         </td>
